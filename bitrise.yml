@@ -11,6 +11,7 @@ workflows:
               ui-tests-ios-13
               ui-tests-ios-14
               ui-tests-ios-15
+              ui-tests-ios-16
               spm-support
           - access_token: "$BITRISE_PERSONAL_ACCESS_TOKEN_PARALLEL_BUILDS"
     - cache-pull: {}
@@ -111,6 +112,12 @@ workflows:
     envs:
       - SIMULATOR_DEVICE: "iPad (9th generation)"
       - SIMULATOR_OS_VERSION: "15.5"
+    after_run:
+      - ui-tests
+  ui-tests-ios-16:
+    envs:
+      - SIMULATOR_DEVICE: "iPad (9th generation)"
+      - SIMULATOR_OS_VERSION: "16.0"
     after_run:
       - ui-tests
   ui-tests:
