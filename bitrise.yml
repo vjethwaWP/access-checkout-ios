@@ -8,9 +8,8 @@ workflows:
     - build-router-start:
         inputs:
           - workflows: |-
-              ui-tests-ios-13
-              ui-tests-ios-14
-              ui-tests-ios-15
+              ui-tests-ios-16
+              ui-tests-ios-17
               spm-support
           - access_token: "$BITRISE_PERSONAL_ACCESS_TOKEN_PARALLEL_BUILDS"
     - cache-pull: {}
@@ -111,6 +110,18 @@ workflows:
     envs:
       - SIMULATOR_DEVICE: "iPad (9th generation)"
       - SIMULATOR_OS_VERSION: "15.5"
+    after_run:
+      - ui-tests
+  ui-tests-ios-16:
+    envs:
+      - SIMULATOR_DEVICE: "iPhone 11"
+      - SIMULATOR_OS_VERSION: "16.1"
+    after_run:
+      - ui-tests
+  ui-tests-ios-17:
+    envs:
+      - SIMULATOR_DEVICE: "iPhone 11 Pro"
+      - SIMULATOR_OS_VERSION: "17.0"
     after_run:
       - ui-tests
   ui-tests:
