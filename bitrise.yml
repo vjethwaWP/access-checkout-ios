@@ -116,6 +116,18 @@ workflows:
       - SIMULATOR_OS_VERSION: "15.5"
     after_run:
       - ui-tests
+  ui-tests-ios-16:
+    envs:
+      - SIMULATOR_DEVICE: "iPhone 14 Pro"
+      - SIMULATOR_OS_VERSION: "16.4"
+    after_run:
+      - ui-tests
+  ui-tests-ios-17:
+    envs:
+      - SIMULATOR_DEVICE: "iPhone 15 Pro"
+      - SIMULATOR_OS_VERSION: "17.o"
+    after_run:
+      - ui-tests
   ui-tests:
     steps:
       - cache-pull: {}
@@ -159,6 +171,18 @@ workflows:
     envs:
       - SIMULATOR_DEVICE: "iPad (9th generation)"
       - SIMULATOR_OS_VERSION: "15.5"
+    after_run:
+      - sdk-ui-tests
+  sdk-ui-tests-ios-16:
+    envs:
+      - SIMULATOR_DEVICE: "iPhone 14 Pro"
+      - SIMULATOR_OS_VERSION: "16.4"
+    after_run:
+      - sdk-ui-tests
+  sdk-ui-tests-ios-17:
+    envs:
+      - SIMULATOR_DEVICE: "iPhone 15 Pro"
+      - SIMULATOR_OS_VERSION: "17.0"
     after_run:
       - sdk-ui-tests
   sdk-ui-tests:
