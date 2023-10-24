@@ -75,7 +75,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-stubCardConfiguration CardConfiguration"
+            argument = "-stubCardConfiguration cardTypes"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument

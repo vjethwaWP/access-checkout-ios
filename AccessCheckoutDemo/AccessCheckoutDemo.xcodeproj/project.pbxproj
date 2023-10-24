@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,8 +51,8 @@
 		E72152862437DBAC009AAFB3 /* AlertViewPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72152852437DBAC009AAFB3 /* AlertViewPageObject.swift */; };
 		E74F7C3C24741490005D40FE /* CardFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F7C3B24741490005D40FE /* CardFlowUITests.swift */; };
 		E74F7C3E247416AE005D40FE /* SwitchViewPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F7C3D247416AE005D40FE /* SwitchViewPageObject.swift */; };
-		E75F85F72437BFE40031F7AC /* JsonStubbedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75F85F62437BFE40031F7AC /* JsonStubbedResponse.swift */; };
-		E75F85F92437CB440031F7AC /* ServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75F85F82437CB440031F7AC /* ServiceStub.swift */; };
+		E75F85F72437BFE40031F7AC /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75F85F62437BFE40031F7AC /* StubResponse.swift */; };
+		E75F85F92437CB440031F7AC /* ServiceStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75F85F82437CB440031F7AC /* ServiceStubs.swift */; };
 		E75F85FB2437CDC80031F7AC /* LaunchArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75F85FA2437CDC80031F7AC /* LaunchArguments.swift */; };
 		E7993C8A243730820082E2C2 /* sessions-paymentsCvc-error.json in Resources */ = {isa = PBXBuildFile; fileRef = E7993C89243730820082E2C2 /* sessions-paymentsCvc-error.json */; };
 		E79A3F1524360C0D00A20555 /* CvcFlowRetrieveSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A3F1424360C0D00A20555 /* CvcFlowRetrieveSessionTests.swift */; };
@@ -126,8 +126,8 @@
 		E72152852437DBAC009AAFB3 /* AlertViewPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewPageObject.swift; sourceTree = "<group>"; };
 		E74F7C3B24741490005D40FE /* CardFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFlowUITests.swift; sourceTree = "<group>"; };
 		E74F7C3D247416AE005D40FE /* SwitchViewPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewPageObject.swift; sourceTree = "<group>"; };
-		E75F85F62437BFE40031F7AC /* JsonStubbedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStubbedResponse.swift; sourceTree = "<group>"; };
-		E75F85F82437CB440031F7AC /* ServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStub.swift; sourceTree = "<group>"; };
+		E75F85F62437BFE40031F7AC /* StubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
+		E75F85F82437CB440031F7AC /* ServiceStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStubs.swift; sourceTree = "<group>"; };
 		E75F85FA2437CDC80031F7AC /* LaunchArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchArguments.swift; sourceTree = "<group>"; };
 		E7993C89243730820082E2C2 /* sessions-paymentsCvc-error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sessions-paymentsCvc-error.json"; sourceTree = "<group>"; };
 		E79A3F1424360C0D00A20555 /* CvcFlowRetrieveSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CvcFlowRetrieveSessionTests.swift; sourceTree = "<group>"; };
@@ -188,8 +188,8 @@
 				E7CFBA3B2436663B009FA24A /* sessions-success.json */,
 				E7CFBA3F24366AF1009FA24A /* sessions-paymentsCvc-success.json */,
 				E7993C89243730820082E2C2 /* sessions-paymentsCvc-error.json */,
-				E75F85F62437BFE40031F7AC /* JsonStubbedResponse.swift */,
-				E75F85F82437CB440031F7AC /* ServiceStub.swift */,
+				E75F85F62437BFE40031F7AC /* StubResponse.swift */,
+				E75F85F82437CB440031F7AC /* ServiceStubs.swift */,
 				E75F85FA2437CDC80031F7AC /* LaunchArguments.swift */,
 			);
 			path = Stubs;
@@ -502,11 +502,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				51CBC4A325A46F5A000D0363 /* RestrictedCardFlowViewController.swift in Sources */,
-				E75F85F72437BFE40031F7AC /* JsonStubbedResponse.swift in Sources */,
+				E75F85F72437BFE40031F7AC /* StubResponse.swift in Sources */,
 				CC1BD93B2448BB9200A4C745 /* CIVariables.swift in Sources */,
 				C9AFE47022B7C5A600943B3E /* CardFlowViewController.swift in Sources */,
 				E7A09298243CB24100BCABC8 /* AlertView.swift in Sources */,
-				E75F85F92437CB440031F7AC /* ServiceStub.swift in Sources */,
+				E75F85F92437CB440031F7AC /* ServiceStubs.swift in Sources */,
 				5174649A27271F1A00E4902B /* Configuration.swift in Sources */,
 				E7B9A34A243393C400137BCF /* CvcFlowViewController.swift in Sources */,
 				C9AFE46F22B7C5A600943B3E /* AppDelegate.swift in Sources */,
@@ -702,12 +702,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BA50193BD557BCBB2DE4933 /* Pods-AccessCheckoutDemo.debug.xcconfig */;
 			buildSettings = {
-				ACCESS_BASE_URL = "https://npe.access.worldpay.com";
+				ACCESS_BASE_URL = "http://localhost:8123";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBQ5BR8NU;
 				INFOPLIST_FILE = "$(SRCROOT)/AccessCheckoutDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -724,12 +725,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E7FDDA3E36720BDB3959BF7 /* Pods-AccessCheckoutDemo.release.xcconfig */;
 			buildSettings = {
-				ACCESS_BASE_URL = "https://npe.access.worldpay.com";
+				ACCESS_BASE_URL = "http://localhost:8123";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBQ5BR8NU;
 				INFOPLIST_FILE = "$(SRCROOT)/AccessCheckoutDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

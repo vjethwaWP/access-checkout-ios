@@ -1,5 +1,4 @@
 import AccessCheckoutSDK
-import Mockingjay
 import UIKit
 
 @UIApplicationMain
@@ -8,18 +7,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let disableStubsLaunchArgument = LaunchArguments.valueOf(LaunchArguments.DisableStubs)
-        let disableStubs:Bool = disableStubsLaunchArgument != "" && disableStubsLaunchArgument != nil ? (disableStubsLaunchArgument! as NSString).boolValue : false
-        
+        let disableStubs: Bool = disableStubsLaunchArgument != "" && disableStubsLaunchArgument != nil ? (disableStubsLaunchArgument! as NSString).boolValue : false
+
         if !disableStubs {
             // Stub remote APIs
-            DiscoveryStub(baseUri: Configuration.accessBaseUrl).start()
-            VerifiedTokensStub(baseUri: Configuration.accessBaseUrl).start()
-            VerifiedTokensSessionStub(baseUri: Configuration.accessBaseUrl).start()
-            SessionsStub(baseUri: Configuration.accessBaseUrl).start()
-            SessionsPaymentsCvcStub(baseUri: Configuration.accessBaseUrl).start()
-
-            // Stub remote card configuration
-            CardConfigurationStub(baseUri: Bundle.main.bundleURL.absoluteString, cardConfigurationUri: Configuration.accessCardConfigurationUrl).start()
+            try! ServiceStubs(baseUri: Configuration.accessBaseUrl)
+                .discovery()
+                .verifiedTokensRoot()
+                .verifiedTokensSessions()
+                .sessionsRoot()
+                .sessionsPaymentsCvc()
+                .cardConfiguration()
+                .start(port: 8123)
         }
 
         return true
