@@ -12,9 +12,13 @@ workflows:
               sdk-ui-tests-ios-13
               sdk-ui-tests-ios-14
               sdk-ui-tests-ios-15
+              sdk-ui-tests-ios-16
+              sdk-ui-tests-ios-17
               ui-tests-ios-13
               ui-tests-ios-14
               ui-tests-ios-15
+              ui-tests-ios-16
+              ui-tests-ios-17
           - access_token: "$BITRISE_PERSONAL_ACCESS_TOKEN_PARALLEL_BUILDS"
     - cache-pull: {}
     - certificate-and-profile-installer: {}
