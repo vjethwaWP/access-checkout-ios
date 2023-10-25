@@ -129,7 +129,7 @@ workflows:
   ui-tests-ios-17:
     envs:
       - SIMULATOR_DEVICE: "iPhone 15 Pro"
-      - SIMULATOR_OS_VERSION: "17.o"
+      - SIMULATOR_OS_VERSION: "17.0"
     after_run:
       - ui-tests
   ui-tests:
