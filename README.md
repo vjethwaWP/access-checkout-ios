@@ -10,7 +10,7 @@
 <div align="right">
     <b><a href="#access-checkout-sdk-for-ios">↥ back to top</a></b>
 </div>
-
+s
 Access Checkout iOS is split into two projects:
 
 1. The [AccessCheckoutSDK](/AccessCheckoutSDK), available as a [Cocoapods](https://cocoapods.org) pod
