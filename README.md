@@ -11,7 +11,7 @@
     <b><a href="#access-checkout-sdk-for-ios">↥ back to top</a></b>
 </div>
 
-Access Checkout iOS is split into two projects:
+Access Checkout iOS is split into two projects: 
 
 1. The [AccessCheckoutSDK](/AccessCheckoutSDK), available as a [Cocoapods](https://cocoapods.org) pod
 2. A sample App, [AccessCheckoutDemo](/AccessCheckoutDemo), demonstrating how to integrate the different functionalities available in the SDK
