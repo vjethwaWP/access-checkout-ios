@@ -24,7 +24,7 @@ Refer to the Worldpay Developers documentation to find out how to integrate the 
 
 <div align="right">
     <b><a href="#access-checkout-sdk-for-ios">↥ back to top</a></b>
-</div>
+</div>d
 
 ### Building the SDK project
 
