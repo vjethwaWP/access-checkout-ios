@@ -8,7 +8,7 @@
 ## Project Structure
 
 <div align="right">
-    <b><a href="#access-checkout-sdk-for-ios">↥ back to top</a></b>
+    <b><a href="#access-checkout-sdk-for-ios">↥ back to top</a></b>s
 </div>
 
 Access Checkout iOS is split into two projects:
