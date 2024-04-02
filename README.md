@@ -1,4 +1,4 @@
-# Access Checkout SDK for iOS
+# Access Checkout SDK for iOSe
 
 ## Table of Contents
 * [Project Structure](#project-structure)
