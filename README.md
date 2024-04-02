@@ -4,7 +4,7 @@
 * [Project Structure](#project-structure)
 * [How to integrate the SDK in an iOS app](#how-to-integrate-the-sdk-in-an-ios-app)
 * [Getting started with SDK development](#getting-started-with-sdk-development)
-
+s
 ## Project Structure
 
 <div align="right">
