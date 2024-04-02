@@ -225,7 +225,7 @@ workflows:
         - simulator_device: iPhone 8
         - scheme: "$SDK_SCHEME"
     - script@1.1.5:
-        title: Install pact client
+        title: Install pact clients
         inputs:
           - content: gem install pact_broker-client
     - script-runner@0.9.3:
