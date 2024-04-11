@@ -115,3 +115,4 @@ Run the command below to bump the SDK version in code.
 A commit with all relevant changes will be added to the branch currently checked out. 
 
 `./scripts/bump_version.sh -v=[version] -t=[ticket_number]`
+
